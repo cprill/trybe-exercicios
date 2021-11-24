@@ -1,0 +1,40 @@
+
+div:hover {
+    display: inline-block;    
+
+    border-width: thin;
+    border-style: solid;
+    border-color: #00f;
+}
+
+.pri:hover {
+    color: rgb(128, 128, 128);
+}
+
+.sec:hover {
+    color: rgb(128, 128, 128);
+}
+
+.com:hover {
+    color: grey;
+}
+
+.esc:hover {
+    color: rgb(21, 15, 105);
+}
+
+.cla:hover {
+    color: rgb(230, 91, 91);
+}
+
+h3 {
+    
+}
+
+
+
+/* 1 - Estilize as divs para que, ao passar o cursor por cima das mesmas, elas ganhem uma borda.
+2 - Faça cada div ter uma cor própria.
+3 - Estilize cada uma das tags h3 .
+4 - Faça a terceira div ser maior que as demais.
+5 - Deixe as tags ímpares h3 com o texto em itálico. */
