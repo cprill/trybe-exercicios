@@ -7,7 +7,7 @@ const c = 20;
 if (c < a > b){
   console.log(a)
   return a;
-} if ( b > c) {
+} else if ( b > c) {
   console.log(b)
   return b;
 } else {

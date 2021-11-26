@@ -5,7 +5,7 @@ const a = 8;
 if (a > 0){
   console.log("positive");
   return "positive";
-} if (a < 0) {
+} else if (a < 0) {
   console.log("negative");
   return "negative";
 } else {
