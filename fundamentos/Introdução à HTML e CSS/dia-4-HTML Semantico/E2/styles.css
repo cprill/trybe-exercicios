@@ -36,9 +36,13 @@ color: rgb(54, 19, 19);
     background-color: green;
     margin: 10px;
     padding: 20px;
-    width: 200px;
+    width: 20%;
     display: inline-block;
     vertical-align: top;
+  }
+
+  #fotoVideo {
+      height: 120px;
   }
 
 .principal {
