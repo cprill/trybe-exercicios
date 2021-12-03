@@ -3,11 +3,11 @@ Parte I - Objetos e For/In
 Usando o objeto abaixo, faça os exercícios a seguir:
  */
 
-let info = {
-  personagem: 'Margarida',
-  origem: 'Pato Donald',
-  nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-};
+// let info = {
+//   personagem: 'Margarida',
+//   origem: 'Pato Donald',
+//   nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
+// };
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -35,7 +35,7 @@ Bem-vinda, Margarida
 }
  */
 
-info.recorrente = "Sim";
+// info.recorrente = "Sim";
 
 // console.log(info);
 
@@ -105,18 +105,18 @@ Ambos recorrentes // Atenção para essa última linha!
 Usando o objeto abaixo, faça os exercícios a seguir:
  */
 
-let leitor = {
-  nome: 'Julia',
-  sobrenome: 'Pessoa',
-  idade: 21,
-  livrosFavoritos: [
-    {
-      titulo: 'O Pior Dia de Todos',
-      autor: 'Daniela Kopsch',
-      editora: 'Tordesilhas',
-    },
-  ],
-};
+// let leitor = {
+//   nome: 'Julia',
+//   sobrenome: 'Pessoa',
+//   idade: 21,
+//   livrosFavoritos: [
+//     {
+//       titulo: 'O Pior Dia de Todos',
+//       autor: 'Daniela Kopsch',
+//       editora: 'Tordesilhas',
+//     },
+//   ],
+// };
 
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -140,11 +140,11 @@ let leitor = {
 }
  */
 
-leitor.livrosFavoritos.push({
-  titulo: 'Harry Potter e o Prisioneiro de Azkaban',
-  autor: 'JK Rowling',
-  editor: 'Rocco',
-});
+// leitor.livrosFavoritos.push({
+//   titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+//   autor: 'JK Rowling',
+//   editor: 'Rocco',
+// });
 
 // console.log(leitor);
 
@@ -154,10 +154,122 @@ leitor.livrosFavoritos.push({
 8 - Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato: "Julia tem 2 livros favoritos".
  */
 
-console.log(leitor['nome'] + " tem " + leitor['livrosFavoritos']['length'] + " livros favoritos.");
+// console.log(leitor['nome'] + " tem " + leitor['livrosFavoritos']['length'] + " livros favoritos.");
 
 
 
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+/* 
+Parte II - Funções
+Agora vamos fazer um exercício que vai deixar nítido como funções com responsabilidades bem definidas deixam o código mais bem escrito.
+
+A manipulação de arrays pode ser complexa em alguns momentos e por isso o JavaScript conta com diversos métodos para a sua manipulação. A documentação é sempre a nossa maior aliada, se você tiver curiosidade de ler mais sobre esses métodos, clique aqui para acessar a documentação completa. Não se preocupe em entender todos os métodos, eles serão trabalhados cada vez com mais frequência durante o curso e sempre que um método novo for necessário ele será ensinado a você.
+
+Spoiler-alert : para os exercícios do dia, os métodos split , join e reverse podem ser muito úteis.
+1 - Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for.
+Exemplo de palíndromo: arara .
+verificaPalindrome('arara') ;
+Retorno esperado: true
+verificaPalindrome('desenvolvimento') ;
+Retorno esperado: false
+ */
+
+
+// function verificaPalindrome(palavra) {
+//   //console.log(palavra);
+//   let palavraArray = palavra.split("");
+//   //console.log(palavraArray);
+//   let palavraArray2 = palavraArray.reverse();
+//   //console.log(palavraArray2);
+//   let palavra2 = palavraArray2.join("");
+//   //console.log(palavra2);
+//   if ( palavra == palavra2) {
+//     return true
+//   } else {
+//     return false
+//   }
+// }
+// console.log(verificaPalindrome("desenvolvimento"));
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+/* 
+2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+Array de teste: [2, 3, 6, 7, 10, 1]; .
+Valor esperado no retorno da função: 4 .
+ */
+
+
+// function localDoMaior(seqArray){
+
+//   for ( let index = 0; index < seqArray.length; index += 1){
+//     let contador = 0
+
+//     for ( let index2 = 0; index2 < seqArray.length; index2 += 1){
+
+//       if (seqArray[index] > seqArray[index2]) {
+//         contador += 1
+//       }
+
+//       if (contador == (seqArray.length - 1 )){
+//         console.log("o maior é " + seqArray[index]);
+//         return index;
+//       }
+//     }
+//   }
+// }
+// console.log(localDoMaior([2, 3, 6, 7, 10, 100]));
+
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+/* 
+3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
+Valor esperado no retorno da função: 6 .
+ */
+
+
+// function localDoMenor(seqArray){
+//   let indiceMenor = 0;
+
+//   for ( let index in seqArray){
+//     if ( seqArray[indiceMenor] > seqArray[index] ){
+//       indiceMenor = index;
+//     }
+//   }
+//   return indiceMenor;
+// }
+
+// console.log(localDoMenor([2, 4, 6, 7, 10, 0, -1]));
+
+
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+/* 
+4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; .
+Valor esperado no retorno da função: Fernanda .
+ */
+let lista = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; 
+
+
+function verificaMaiorNome(lista){
+let maior = "";
+for ( let index of lista ) {
+   if (maior.length < index.length ){
+    maior = index;
+  }
+}
+return maior;
+}
+
+console.log(verificaMaiorNome(lista));
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
@@ -177,8 +289,4 @@ console.log(leitor['nome'] + " tem " + leitor['livrosFavoritos']['length'] + " l
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-
-
 
