@@ -67,3 +67,4 @@ secondLi.addEventListener('dblclick', resetText);
 // navegador fará esse trabalho por você, não é legal? Desse jeito, o
 // event.target na nossa função retornará o objeto 'firstLi'.
 
+
