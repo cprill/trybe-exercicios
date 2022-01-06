@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Formulário</h1>
+  </header>
+  <form action="" method="get">
+
+    <div>
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div>
+          <label for="full-name">Nome </label>
+          <input type="text" id="full-name"name="nome" placeholder="Digite seu nome completo" maxlength="40" required>
+        </div>
+
+        <div>
+          <label for="email">E-mail </label>
+          <input type="text" id="e-mail" name="email" placeholder="Digite seu e-mail" maxlength="50" required>
+        </div>
+
+        <div>
+          <label for="cpf">CPF </label>
+          <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" maxlength="11" required>
+        </div>
+
+        <div>
+          <label for="endereco">Endereço </label>
+          <input type="text" id="endereco" name="endereco" placeholder="Digite seu endereco" maxlength="200" required>
+        </div>
+
+        <div>
+          <label for="cidade">Cidade </label>
+          <input type="text" id="cidade" name="cidade" placeholder="Digite sua Cidade" maxlength="28" required>
+        </div>
+
+        <div>
+          <label for="estado">Estado </label>
+          <select name="estado" id="estado" required>
+            <option disabled selected value>Selecione o Estado</option>
+          </select>
+        </div>
+
+        <div>
+          <legend>Tipo Residencia</legend>
+          <input type="radio" name="tipo" id="radio-casa" value="casa" required>
+          <label for="radio-casa">Casa</label>
+          
+          <input type="radio" name="tipo" id="radio-apto" value="apartamento" required>
+          <label for="radio-apto">Apartamento</label>
+        </div>
+      </fieldset>
+    </div>
+    <div>
+      <fieldset>
+        <legend>Último Emprego</legend>
+
+        <div>
+          <label for="res-currc">Resumo do Currículo</label>
+          <textarea name="res-currc" id="res-currc" cols="50" rows="20" maxlength="1000" required></textarea>
+        </div>
+
+        <div>
+          <label for="cargo">Cargo </label>
+          <input type="text" id="cargo" name="cargo" placeholder="Digite seu cargo" maxlength="40" required>
+        </div>
+
+        <div>
+          <label for="desc-cargo">Descrição do cargo </label>
+          <input type="text" id="desc-cargo" name="desc-cargo" placeholder="Descreva as atribuições do seu cargo" maxlength="500" required>
+        </div>
+
+        <div>
+          <label for="input-data-inicio">Data de início </label>
+        <input type="text" id="input-data-inicio" required>
+        </div>
+      </fieldset>
+    </div>
+
+    <div class="buttons">
+      <button type="submit" id="vai">Enviar</button>
+      <button type="reset" >Limpar</button>
+    </div>
+
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
