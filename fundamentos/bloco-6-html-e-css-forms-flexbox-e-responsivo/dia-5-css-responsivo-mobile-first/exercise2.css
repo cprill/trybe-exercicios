@@ -30,3 +30,24 @@ p {
     line-height: 1.5em;
   }
 }
+
+@media screen and (min-width: 700px) {
+
+  body {
+    background-color: lightgray ;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    margin: 3%;
+  }
+
+  p {
+    padding: 10px 10px;
+  }
+
+  header {
+    margin-right: 20px;
+  }
+
+}
