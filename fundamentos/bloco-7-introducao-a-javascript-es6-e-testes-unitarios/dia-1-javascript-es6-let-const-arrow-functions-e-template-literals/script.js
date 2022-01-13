@@ -64,11 +64,28 @@ testeScopo(true);
 
 // 1- Utilize template literals para que a chamada console.log(<seu código>oddsAndEvens<seu código>); retorne "Os números 2,3,4,7,10,13 se encontram ordenados de forma crescente!"
 
-const oddsAndEvens = [13, 3, 4, 10, 7, 2];
-// Seu código aqui.
-const compararNumeros = (a, b) => a - b;
-console.log(`Os números ${oddsAndEvens.sort(compararNumeros)} se encontram ordenados de forma crescente!`); // será necessário alterar essa linha 😉
+// const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+// const compararNumeros = (a, b) => a - b;
+// console.log(`Os números ${oddsAndEvens.sort(compararNumeros)} se encontram ordenados de forma crescente!`);
 
 // 2- Bônus (opcional): tente fazer o mesmo exercício utilizando o método array.sort() . Spoiler: É possível realizar uma função que ordene qualquer array de números.
 
 // Anterior
+
+// Parte II
+
+// Exercicio 1
+
+//Crie uma função que receba um número e retorne seu fatorial.
+
+const fatorial = (n) => {
+  let x = n;
+  while (n > 1) {
+    x = x * (n - 1);
+    n -- ; 
+  }
+  return x;
+}
+
+console.log(fatorial(4));
