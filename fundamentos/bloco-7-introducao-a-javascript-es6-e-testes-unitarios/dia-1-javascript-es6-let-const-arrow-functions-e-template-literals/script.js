@@ -1,3 +1,7 @@
+// Parte I
+
+// Exercicio 1
+
 /* function testingScope(escopo) {
   if (escopo === true) {
     var ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
@@ -34,7 +38,7 @@ testeScopo(true); */
 
 // 2- Modifique as concatenações para template literals .
 
-const testeScopo = escopo => {
+/* const testeScopo = escopo => {
 
   if (escopo === true) {
     let ifScope = 'Não devo ser utilizada fora do meu escopo (if)';
@@ -48,3 +52,21 @@ const testeScopo = escopo => {
 }
 
 testeScopo(true); 
+ */
+
+// Exercicio 2
+
+// Copie o código abaixo e faça uma função que retorne o array oddsAndEvens em ordem crescente.
+
+//const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+// Seu código aqui.
+// console.log(oddsAndEvens); // será necessário alterar essa linha 😉 
+
+// 1- Utilize template literals para que a chamada console.log(<seu código>oddsAndEvens<seu código>); retorne "Os números 2,3,4,7,10,13 se encontram ordenados de forma crescente!"
+
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+// Seu código aqui.
+const compararNumeros = (a, b) => a - b;
+console.log(`Os números ${oddsAndEvens.sort(compararNumeros)} se encontram ordenados de forma crescente!`); // será necessário alterar essa linha 😉
+
+
