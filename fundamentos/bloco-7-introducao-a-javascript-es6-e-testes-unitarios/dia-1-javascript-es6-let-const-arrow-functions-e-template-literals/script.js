@@ -79,7 +79,7 @@ testeScopo(true);
 
 //Crie uma função que receba um número e retorne seu fatorial.
 
-const fatorial = (n) => {
+/* const fatorial = (n) => {
   let x = n;
   while (n > 1) {
     x = x * (n - 1);
@@ -88,4 +88,19 @@ const fatorial = (n) => {
   return x;
 }
 
-console.log(fatorial(4));
+console.log(fatorial(4)); */
+
+// Exercicio 1
+
+//Crie uma função que receba uma frase e retorne qual a maior palavra.
+
+const longestWord = (n) => {
+  const array = n.split(" ");
+  const novoArray = array.sort();
+  console.log(novoArray)
+  const maiorP = novoArray[novoArray.length];
+  return maiorP;
+
+}
+
+longestWord('Antônio foi no banheiro e não sabemos o que aconteceu');
