@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import './data.js';
 import './Pokemons'
+import PropTypes
 
 class Pokemon extends React.Component {
     render() {
